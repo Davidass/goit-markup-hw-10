@@ -1,0 +1,96 @@
+.button {
+  all: unset;
+  display: inline-block;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 250ms $timing-fn;
+
+  &:hover,
+  &:focus {
+    background-color: $color-menu-hover;
+    border: none;
+  }
+}
+
+.icon-overlay {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-icons__item--icon-lake {
+  position: absolute;
+  left: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.overlay-icons__item--icon-shuffe {
+  position: absolute;
+  left: 60px;
+  width: 48px;
+  height: 48px;
+}
+
+.overlay-icons__item--icon-clock {
+  position: absolute;
+  right: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.overlay-icons__item--icon-cart {
+  position: absolute;
+  width: 168px;
+  height: 48px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.icon-overlay--icon-cart {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-icons__item--icon-text {
+  position: absolute;
+  top: 7px;
+  left: 55px;
+  font-family: $primary-color;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+}
+
+// button-footer
+
+.button-mail {
+  all: unset;
+  width: 90px;
+  height: 56px;
+  cursor: pointer;
+  padding-left: 25px;
+  border: 2px solid #fff;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  transition: all 250ms linear;
+
+  &:hover {
+    background-color: #117e68;
+    transform: scale(1.1);
+    padding-left: 0;
+  }
+}

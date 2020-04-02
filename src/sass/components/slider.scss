@@ -1,0 +1,81 @@
+.hero {
+  position: relative;
+  height: 600px;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.522),
+      rgba(0, 0, 0, 0.522)
+    ),
+    url('../images/slider.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.hero-slider__title {
+  width: 775px;
+  font-family: $primary-fond-stack;
+  font-size: 48px;
+  letter-spacing: -1px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  animation-name: banertitle;
+  animation-duration: 2000ms;
+  animation-timing-function: $timing-fn;
+  animation-delay: 1000ms;
+  animation-fill-mode: backwards;
+}
+
+.ampersant,
+.excerpt {
+  color: $color-menu-hover;
+  font-weight: 400;
+}
+
+.hero-slider__link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 150%) scale(1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 42px;
+  background-color: $color-menu-hover;
+  cursor: pointer;
+  border: 2px solid $color-menu-hover;
+  font-family: $second-fond-family;
+  font-size: $primary-fond-size;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 250ms $timing-fn;
+  animation-name: slideInTop;
+  animation-duration: 1500ms;
+  animation-timing-function: $timing-fn;
+  animation-fill-mode: backwards;
+  animation-delay: 1500ms;
+
+  &:hover,
+  &:focus {
+    color: #000;
+    background-color: #117e68;
+    transform: translate(-50%, 150%) scale(1.1);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+}

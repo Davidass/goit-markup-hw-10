@@ -1,0 +1,27 @@
+.logo {
+  font-family: $second-fond-family;
+  color: $color-logo;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: auto;
+  text-transform: uppercase;
+  animation-name: logoleft;
+  animation-duration: 600ms;
+  animation-timing-function: $timing-fn;
+  animation-delay: 1000ms;
+  animation-fill-mode: backwards;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+
+  &::first-letter {
+    font-family: $second-fond-family;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: $color-menu-hover;
+  }
+}

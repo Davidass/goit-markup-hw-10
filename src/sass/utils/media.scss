@@ -1,0 +1,10 @@
+@media screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.522),
+        rgba(0, 0, 0, 0.522)
+      ),
+      url('../images/slide4@2x.jpg');
+  }
+}

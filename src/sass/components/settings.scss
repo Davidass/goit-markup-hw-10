@@ -1,0 +1,46 @@
+.settings-list {
+  font-family: $primary-fond-stack;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #555252;
+  list-style: none;
+  cursor: pointer;
+}
+
+.settings-list__item {
+  max-width: 255px;
+}
+
+.settings-list__icon {
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 65px;
+}
+
+.settings-list__title {
+  font-size: 18px;
+  line-height: 32px;
+  color: $color-logo;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.settings-list__text {
+  font-size: $primary-fond-size;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -0.28px;
+  text-indent: initial;
+}
